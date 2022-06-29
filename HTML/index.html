@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+
+<body>
+    <!--heading se indica titulo-->
+    <h1>Titulo h1 </h1>
+    <h2>Titulo h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <br>
+    <!--linea horizontal-->
+    <hr>
+    <!--parrafos, se escribe entre medio, se usa para trabajar con mucho texto-->
+    <b>TIPOS DE LETRAS</b>
+    <p>
+        <!--etiqueta b asigna estilo negrita-->
+        <b>experiencia práctica </b>
+        <!--etiqueta b asigna estilo cursiva-->
+        <i>y gratuita con la plataforma,</i>
+        <!--etiqueta b asigna estilo subrayado-->
+        <u>los productos y los servicios de AWS</u>
+    </p>
+
+    <!--se pueden conbinar los estilos, ejemplo:-->
+    <p>
+        <b>
+            <i>
+                <u>
+                    Genesis Quezada
+                </u>
+            </i>
+        </b>
+    </p>
+    <!--salto de linea-->
+    <br>
+    <!--linea horizontal-->
+    <hr>
+
+    <!--etiqueta de imagenes, dentro de las etiquetas se agregan atributos-->
+    <!--scr: source alt: alternativo o sustuto-->
+    <!--alt se utulia cuando la imagen no es encontrada-->
+    <!--en src se agrega la imagen seleccionada desde carpeta html-->
+    <b>AGREGAR IMAGEN</b>
+    <br>
+    <img src="imagen.png" alt="imagen1">
+    <br>
+    <!--width: alto height: ancho, si la imagen se agranda mucho se pixelea-->
+    <!--se debe establecer ruta donde est la imagen-->
+    <img src="assets/img/imagen2.jpg" alt="html" width="50" height="100">
+    <br>
+    <!--si se solo width o heigth se mantendran las proporciones-->
+    <img src="assets/img/53j.png" alt="imagen2" width="50" height="100">
+    <br>
+    <br>
+    <b>FORMAS DE REDIRIGIR </b>
+    <br>
+    <!--Link o Hipervinculos, te traslada a la pagina indicada-->
+    <a href="https://www.generation.org/">Presione aquí</a>
+    <br>
+    <!--url es valor absoluto porque redirige a otra pagina-->
+    <!--si no hay registros de ingreso a esta pag figura en azul, de lo contrario en morado-->
+    <!--targer blank abre pagina en otra pestaña-->
+    <a href="https://www.lun.com" target="_blank">Dirigirse a Lun</a>
+    <br>
+    <!--url es valor absoluto porque redirige a otra pagina-->
+    <!--URL DE VALOR RLATIVO, REDIRIGE A PAG DE LA MISMA WEB-->
+    <a href="pagina2.html">Dirigirse a pagina2</a>
+    <br>
+    <!--url es valor de anclaje, movernos dentro de una misma pag vamos a otro lado-->
+    <!--el # dirige a la pag que queramos-->
+
+    <a href="#nombre">ir a seccion principal</a>
+    <br>
+    <!--se puede poner imagen en ves de texto para redirigir-->
+    <b>FORMAS DE REDIRIGIR CON UNA IMAGEN </b>
+    <br>
+    <a href="https://www.generation.org/" target="_blank">
+        <img src="assets/img/imagen3.png" alt="You employed" width="50" height="100">
+    </a>
+    <br>
+    <!--LISTA ORDENADA, SE UTILIA CUANDO SE SABE QUE LA LISTA VIENE ORDENADA-->
+    <b> Listas ordenadas</b>
+    <ol>
+        <li>Grupo 1</li>
+        <li>Grupo 2</li>
+        <li>Grupo 3</li>
+        <li>Grupo 4</li>
+        <li>Grupo 5</li>
+        <li>Grupo 6</li>
+        <li>
+            <ol>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2</li>
+            </ol>
+        </li>
+    </ol>
+    <b> Listas NO ordenadas</b>
+    <!--LISTA NO ORDENADA-->
+    <ul>
+        <li>Grupo 1</li>
+        <li>Grupo 2</li>
+        <li>Grupo 3</li>
+        <li>Grupo 4</li>
+        <li>Grupo 5</li>
+        <li>Grupo 6</li>
+        <li>
+            <ul>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2</li>
+                <li>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li>Grupo 7.2</li>
+                    </ul>
+                </li>
+                <ul>
+                </ul>
+        </li>
+        </ul>
+        <br>
+        <br>
+        <!-- LISTAS
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>-->
+        <!--CREACION DE TABLAS, BASE DE TODA TABLA-->
+        <!--table, thead,tr,th, en ese orden-->
+        <!--tr genera una columna, por cad th va un td son las filas-->
+        <b> TABLAS</b>
+        <table>
+            <thead>
+                <tr>
+                    <th>Edad</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>27</td>
+                <td>Genesis</td>
+                <td>Quezada</td>
+                <td>Rodriguez</td>
+            </tbody>
+        </table>
+</body>
+
+</html>
