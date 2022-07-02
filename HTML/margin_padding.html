@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding</title>
+    <style>
+        /*se utiliza para separar 2 elementos*/
+        
+        #padre {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(134, 238, 238);
+            /*EL MARGIN PROVOCA DESPLAZAMIENTO, EL ELEMENTO CRECE,efecto optico*/
+            margin: 20px auto;
+            margin-top: 30px;
+            margin-left: 20px;
+            /*cuando se agrega no se desplaza el padre cuanso de edita margin hijo*/
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding-left: 20px;
+        }
+        
+        #hijo {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(173, 138, 206);
+            /*display inline-block: poner elementos uno al lado del otro */
+            /*display block: pone elementos en bloque*/
+            /*display inline: pone elementos uno al lado del otro de izq a der, en una linea*/
+            display: inline-block;
+        }
+        
+        #hijo2 {
+            width: 40px;
+            height: 40px;
+            background-color: rgb(198, 223, 110);
+            display: inline-block;
+        }
+        /*SI NO SE ASIGNA WIDGTH ASIGNA EL ANCHO COMPLETO POR DEFAULT*/
+        
+        a {
+            width: 60px;
+            height: 40px;
+            display: block;
+            background-color: rgb(230, 181, 164);
+        }
+        
+        p {
+            display: inline;
+        }
+        /*PADDING: DESPLAZA ELEMENTOS INTERNAMENTE*/
+        /*ELEMENTOS BLOCK: <div> , <body> ,<form> ,<h1>, <h6>, <p>, <table>,<ul>, <ol>, <il>*/
+        /*ELEMENTOS INLINE: <a> =ancor <img>: imagen <input>: son tipo inline <label> <select>*/
+        /*NUNCA PONER ELEMENTOS DE BLOCK DENTRO DE UN ELEMENTO INLINE*/
+        /*SI SE PUEDEN AGREGRAR ELEMENTOS INLINE EN ELEMENTOS DE BLOCK*/
+    </style>
+</head>
+
+<body>
+    <div id="padre">
+        <div id="hijo"></div>
+        <div id="hijo2"></div>
+    </div>
+    <!--BLOCK-->
+    <a href="#grupo1">Grupo 1</a>
+    <a href="#grupo2">Grupo 2</a>
+    <a href="#grupo3">Grupo 3</a>
+    <a href="#grupo4">Grupo 4</a>
+    <a href="#grupo5">Grupo 5</a>
+    <a href="#grupo6">Grupo 6</a>
+    <br>
+    <p>bbbbbbb bbbbbbbbbb bbbbbb</p>
+    <p>aaaaa aaaaaa aaaaa aaaaaaa</p>
+</body>
+
+</html>

@@ -9,8 +9,58 @@
 </head>
 
 <body>
-    <h1> Estoy en pagina 2</h1>
     <a href="index.html">Volver a index</a>
+    <h2> SELECCIONA UNA OPCION</h2>
+    <h3> INPUT TIPO RADIO BUTTON</h3>
+    <!--radio button: entrega opciones para seleccionar, solo una opcion-->
+    <!--name deben ser iguales en todos los input, para que pertenezcan al mismo grupo-->
+    <!--el name envia al backend-->
+    <!--value: indica el elemento que se va a pasar ej: opcion=html-->
+    <input type="radio" name="opcion" value="html">HTML<br>
+    <input type="radio" name="opcion" value="css">CSS <br>
+    <input type="radio" name="opcion" value="javascript">JavaSript <br>
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+    <h3> INPUT TIPO CHECKBOK</h3>
+    <!--type: checkbok, permite seleccionar mas de una-->
+    <!--name: deben ser diferentes-->
+    <!--url?opciones1=html&opciones2=css-->
+    <!--SE PUEDE PONER EL NOMBRE AL INICIO O AL FINAL DE INPUT-->
+    <!--el id es unico por elemento, no debe ser el mismo-->
+    <!--name: deben ser diferentes-->
+    <!--LABEL: en el for se indica la referencia al id-->
+    <label for="html">HTML</label><input type="checkbox" name="opciones1" id="html" value="html">HTML<br>
+    <label for="css">CSS</label><input type="checkbox" name="opciones2" id="css" value="css">CSS<br>
+    <label for="javascript">CSS</label><input type="checkbox" name="opciones3" id="javascript" value="javascript">JavaSript<br>
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+    <h3> SELECT Y OPTION</h3>
+    <!--SELECT, estructura, SOLO SE ESCOGE UNA OPCION-->
+    <!--option: es lo que ve el usuario en server-->
+    <!--al backend se le entrega el valor 1, SE CAPTURA LA INFO EN VALUE-->
+    <!--en el 0 se especifica el mensaje por default en la casilla, ej: seleccione una opcion, SIEMPRE OFRECER ESTA OPCION-->
+    <select id="nombres" name="nombres">
+    <option value="0">Seleccione un nombre</option>
+    <option value="1">Gene</option>
+    <option value="2">Ambi</option>
+    <option value="3">Sofia</option>
+    <option value="4">Abril</option>
+</select><br>
+    <input type="submit" value="Submit">
+    <br>
+    <br>
+    <h3> SELECT Y OPTION MULTIPLE</h3>
+    <!--al agregar multiple permite seleccionar mas de una opcion-->
+    <select id="nombres" name="nombres" multiple>
+    <option value="0">Seleccione un nombre</option>
+    <option value="1">Gene</option>
+    <option value="2">Ambi</option>
+    <option value="3">Sofia</option>
+    <option value="4">Abril</option>
+</select><br>
+    <input type="submit" value="Submit">
 </body>
 
 </html>

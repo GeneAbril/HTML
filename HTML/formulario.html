@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Formulario, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <!--Etiqueta form para formulario, con form-label-iinput-->
+    <!--action: se indica la ruta o url-->
+    <!--method: especifica cmo queremos que se visualice, get o post-->
+    <!--con placeholder se establece mensaje en casilla de texto, ej: ingresa tu nombre-->
+    <h1>Formulario de envío</h1>
+    <form action="" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+        <br>
+        <!--para agregar mas opciones se escribe solo label e input dentro del form-->
+        <!--en email el type es email-->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu email">
+        <br>
+        <!--en clave el type es password, para que se escriba oculto-->
+        <!--required indica que la casilla es obligatoria-->
+        <label for="pass">Password</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+        <br>
+        <!--en fecha el type es date-->
+        <!--con min y max se establece el rango de fecha que se va a visualizar-->
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" min="2001-01-01-" max="20100-01-01">
+        <br>
+        <!--en hora el type es datetime-local-->
+        <!--id y name en fecha para que figure como calendario y hora-->
+        <label for="hora">Hora y Fecha</label>
+        <input type="datetime-local" id="fecha2" name="fecha2">
+        <br>
+        <!--hidden: elemento oculto visualmente-->
+        <input type="hidden" id="id" name="id" value="77">
+        <br>
+        <!--area de texto: se puede escribir mucho texto, es un campo de texto-->
+        <!--cols:ancho y rows:largo establece el tamaño del texto a visualizar-->
+        <!--maxlength: establece maximo de caracteres a solicitar-->
+        <!--minlength: establece el minimo de caracteres a solicitar-->
+        <textarea id="textarea" name="textarea" cols="25" rows="4" maxlength="10" minlength="5" placeholder="Ingrese un comentario"></textarea>
+        <br>
+        <!--estructura para agregar boton, input o button-->
+        <!--con type submit se establece el boton, ejemplo: boton enviar-->
+        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
+        <!--type reset limpia las casillas a rellenar-->
+        <button type="reset">Limpiar</button>
+    </form>
+</body>
+
+</html>

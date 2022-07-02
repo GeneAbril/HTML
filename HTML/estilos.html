@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!--CSS SE TRABAJA DENTRO DE HEAD PARA DAR ESTILO-->
+    <style>
+        /*3 formas basicas de asignar estilo por elemento HTML*/
+        /*div se refiere a todo lo que esta en la etiqueda div, la estructura es div {}*/
+        /*background color:asigna color a todo el y los div */
+        /*1°RA FORMA por elemento html*/
+        /*Por etiqueta -> Muy genérico
+Por clase -> Genérico reducido
+Por id -> Específico
+!important -> Prioritario*/
+        
+        div {
+            background-color: rgb(128, 228, 128);
+            width: 50%;
+        }
+        /*p background color:asigna color a todo el y los parrafos, agrega un fondo a etiqueta p*/
+        
+        p {
+            background-color: rgb(221, 187, 74);
+        }
+        /*img{}, asignar estilo a etiqueta imagen*/
+        /*el % se utilia con paginas responsivas y elpx establece rango estatico*/
+        
+        img {
+            width: 100px;
+        }
+        /*EM=16PX, SE PUEDE ESTABLECER EL VALOR EN EM EJ: 4EM(4X16) y REM=16PX, no es escalable*/
+        /*2°RA FORMA, trabajar por clases, afectan solo aquellas etiquetas que tengan la clase*/
+        /*puede ser cualquier etiqueta*/
+        /*primero va un punto y despues el nombre de la clase*/
+        /*con clase se agrega color a la letra, se afecta la clase mencionada*/
+        
+        .colorWhite {
+            color: white;
+            background-color: rgb(236, 76, 76);
+        }
+        /*important establece prioridad, no usar siempre*/
+        
+        .generation1 {
+            color: rgb(14, 173, 247) !important;
+        }
+        /*3° FORMA ESTILO POR ID(es unico), ESTILO ESPECIFICO PARA LA ETIQUETA*/
+        /*color afecta al texto y background al fondo*/
+        /*se agrega nombre de id despues de #*/
+        /*ENTRE ETIQUETA Y CLASE ES MAS IMPORTANTE LA CLASE, id tiene mayor prioridad que todos*/
+        
+        #importante {
+            color: rgb(50, 9, 236);
+        }
+        
+        #pg1 {
+            color: rgb(248, 4, 4);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!--class y id se agregan antes del mayor que-->
+        <p>parrafo 1</p>
+        <p class="colorWhite">parrafo 2</p>
+        <p class="colorWhite">parrafo 3</p>
+        <!--se agrega id para hacer mención en head-->
+        <p id="importante">parrafo 4</p>
+        <img src="assets/img/53j.png" alt="front">
+    </div>
+    <div class="colorWhite">
+        <p>parrafo 5</p>
+    </div>
+    <p id="pg1" class="generation1">Parrafo 6</p>
+</body>
+
+</html>
