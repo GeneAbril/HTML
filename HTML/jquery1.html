@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        //se puede usar dentro de head o body
+        //document ready, cuando la pagina esta cargada se ejecutan estas funciones
+        //dentro de function se escribe el codigo
+        $(document).ready(function() {
+            //capturar par asignar funcionalidad por id, clase y elemento en css
+            //ESTRUCTURA PARA CAPTURAR EVENTOS: $().evento(funcionalidad o accion);
+            //capturar accion
+            // $('button').evento();
+            //capturar elemento
+            //$('input').evento();
+            //capturar clase, con punto antes
+            //$('.enviar').evento();
+            //capturar id, con gato antes
+            //$('$btnenviar').evento();
+
+            //GET Y SET, capturar valores, evento click
+            //LAS ETIQUETAS SON GENERICAS
+            $('#btn1').click(function() {
+                let parrafo1 = $('#p1').text();
+                //ventana emergente de evento click
+                alert("evento click" + " " + parrafo1); //obtener valores
+
+                //set
+                $('#p1').text('este es un nuevo mensaje');
+            });
+            //funciones efectos y animaciones
+            //hide()=oculta elementos
+            $('#btn2').click(function() {
+                $('#p2').hide();
+            });
+
+            //fncion show: mostrar elemento
+            $('#btn3').click(function() {
+                $('#p2').show();
+            });
+
+            //toggle=oculta y muestra elementos
+            $('#btn4').click(function() {
+                $('#p2').toggle();
+            });
+            //slidedown
+            $('#btn6').click(function() {
+                $('#p3').slideDown('slow');
+            });
+
+            //slideup
+            $('#btn5').click(function() {
+                $('#p3').slideUp(3000);
+            });
+            //slidetoggle
+            $('#btn7').click(function() {
+                $('#p3').slideToggle();
+            });
+
+            //fadeIn()
+            $('#btn8').click(function() {
+                $('#p4').fadeIn('slow');
+            });
+            //FADEout
+            $('#btn9').click(function() {
+                $('#p4').fadeOut('slow');
+            });
+            //FADEtoggle
+            $('#btn10').click(function() {
+                $('#p4').fadeToggle(3000);
+            });
+            //fin jquery
+        });
+    </script>
+</head>
+
+<body>
+    <!--EJEMPLO CON BOTONES-->
+    <!--accion de hacer click en boton-->
+    <!--<button value="enviar"></button>-->
+    <!--elemento input-->
+    <!--<input type="button" value="">
+    <input type="button" class="enviar" value="">
+    <input type="button" class="enviar" id="btnenviar" value="">-->
+    <h3>GETTER Y SETTER</h3>
+    <!--parrafo-->
+    <p id="p1">Esto es un parrafo 1</p>
+    <button id="btn1">get y set</button>
+    <br>
+    <hr>
+    <!--EFECTOS-->
+    <h3>FUNCION HIDE</h3>
+    <p id="p2">Esto es un parrafo 2</p>
+    <button id="btn2">get y set</button>
+    <br>
+    <hr>
+    <h3>FUNCION SHOW-TOGGLE</h3>
+    <p id="p2">Esto es un parrafo 3</p>
+    <button id="btn2">get y set</button>
+    <button id="btn3">show</button>
+    <button id="btn4">toggle</button>
+    <br>
+    <hr>
+
+    <h1>SlideUp SlideDown SlideToggle</h1>
+    <button id="btn5"> SlideDown()</button>
+    <button id="btn6"> SlideUp()</button>
+    <button id="btn7"> SlideToggle()</button>
+    <p id="p3">Esto es un parrafo 3</p>
+    <br>
+    <hr>
+    <h3>FADEIN FADEOUT FADETOGGLE</h3>
+    <h1>FadeIn FadeOut FadeToggle</h1>
+    <button id="btn8"> fadeIn()</button>
+    <button id="btn9"> FadeOut()</button>
+    <button id="btn10"> FadeToggle()</button>
+    <p id="p4">Esto es un parrafo 4</p>
+    <br>
+    <hr>
+</body>
+
+</html>

@@ -51,6 +51,66 @@
         p {
             display: inline;
         }
+        
+        #default1 {
+            width: 50px;
+            /*agranda hacia abajo*/
+            height: 100px;
+            background-color: darkblue;
+            /*para que queden uno al lado del otro*/
+            display: inline-block;
+        }
+        
+        #default2 {
+            width: 50px;
+            /*agranda hacia abajo*/
+            height: 200px;
+            background-color: darkorange;
+            /*para que queden uno al lado del otro*/
+            display: inline-block;
+        }
+        
+        #top1 {
+            width: 50px;
+            /*agranda hacia abajo*/
+            height: 100px;
+            background-color: rgb(19, 238, 12);
+            /*para que queden uno al lado del otro*/
+            display: inline-block;
+            /*alineacion se va a la parte superior*/
+            vertical-align: top;
+        }
+        
+        #top2 {
+            width: 50px;
+            /*agranda hacia abajo*/
+            height: 200px;
+            background-color: rgb(240, 20, 20);
+            /*para que queden uno al lado del otro*/
+            display: inline-block;
+        }
+        
+        #middle1 {
+            width: 50px;
+            /*agranda hacia abajo*/
+            height: 90px;
+            background-color: rgb(238, 12, 219);
+            /*para que queden uno al lado del otro*/
+            display: inline-block;
+            /*queda centrado de arriba hacia abajo*/
+            vertical-align: top;
+        }
+        
+        #middle2 {
+            width: 50px;
+            /*agranda hacia abajo*/
+            height: 200px;
+            background-color: rgb(241, 238, 11);
+            /*para que queden uno al lado del otro*/
+            display: inline-block;
+            /*queda centrado de arriba hacia abajo*/
+            vertical-align: middle;
+        }
         /*PADDING: DESPLAZA ELEMENTOS INTERNAMENTE*/
         /*ELEMENTOS BLOCK: <div> , <body> ,<form> ,<h1>, <h6>, <p>, <table>,<ul>, <ol>, <il>*/
         /*ELEMENTOS INLINE: <a> =ancor <img>: imagen <input>: son tipo inline <label> <select>*/
@@ -74,6 +134,26 @@
     <br>
     <p>bbbbbbb bbbbbbbbbb bbbbbb</p>
     <p>aaaaa aaaaaa aaaaa aaaaaaa</p>
+    <!--generalmente la alineción es por abajo, default-->
+    <!--alineacion vertical por default-->
+    <h4>ALINEADO INFERIOR POR vertical-align: DEFAULT</h4>
+    <div>
+        <div id="default1"></div>
+        <div id="default2"></div>
+    </div>
+
+    <!--alineacion vertical superior (top)-->
+    <h4>ALINEADO SUPERIOR POR vertical-align: TOP</h4>
+    <div>
+        <div id="top1"></div>
+        <div id="top2"></div>
+    </div>
+    <!--alineacion vertical central (Middle)-->
+    <h4>ALINEADO CENTRAL POR vertical-align:MIDDLE</h4>
+    <div>
+        <div id="middle1"></div>
+        <div id="middle2"></div>
+    </div>
 </body>
 
 </html>

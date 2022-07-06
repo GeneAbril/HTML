@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script>
+    </script>
+</head>
+
+<body>
+    <!--1EM= 16PIXELES, P4=1,5EM, P5=3EM-->
+    <!--P0=0EM, P1=0,25EM, P2=0,5EM, P3=1EM, PM hace referencia a unidad de medida em:16px-->
+    <!--P = PADDIN-- text-center en div container centro todos los textos
+    p3 para alinear cn paddin-->
+    <div class="container-fluid p-3 text-center">
+        <!--class de div de header, dentro de class va el color(codigo boostrap)-->
+        <!--mb: margin button dentro de class-->
+        <div class="bg-dark p-5 mb-3">
+            <!--class de div para boton de header, dentro de class va el color(codigo boostrap)-->
+            <div class="bg-info text-white">
+                <div>Header</div>
+            </div>
+        </div>
+        <!--row= divide espacios, PX= HORIZONTAL Y VERTICAL-->
+        <div class="row px-3">
+            <!--class de div de aside, dentro de class va el color(codigo boostrap)-->
+            <!--col= columnas(col solo se adapta al espacio), me= margin-end-->
+            <div class="col-4 bg-info text-white p-5 me-3" style="height:300px;">Aside</div>
+            <!--class de div de main, p3 para alinear con paddin,ms= margin star-->
+            <div class="col bg-warning text-white p-3 ms-2">Main
+                <div class="row" style="height:400px;">
+                    <!--class de div de article por separado
+                    d-inline-block=display-->
+                    <div class="col bg-light text-dark me-1">Article</div>
+                    <div class="col bg-light text-dark">Article</div>
+                </div>
+            </div>
+        </div>
+        <!--marin top= mt-->
+        <div class="mt-3">
+            <!--class de div de Footer-->
+            <div class="bg-success text-white">Footer</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+
+</html>
